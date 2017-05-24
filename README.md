@@ -1,12 +1,12 @@
 PtrFrameLayout高级编程-自定义header
 ===  
-###前景       
+### 前景       
  
-        最近项目中的下拉刷新控件使用的`ptrFrameLayout`,需要对header进行自定义，效果图如下：\<br> 
+        最近项目中的下拉刷新控件使用的`ptrFrameLayout`,需要对header进行自定义，效果图如下：<br> 
         
-        ![](https://github.com/Json-chen/BulingPtrFrameLayout/device-2017-05-24-104313.gif)\<br> 
+        ![](https://github.com/Json-chen/BulingPtrFrameLayout/raw/master/device-2017-05-24-104313.gif)<br> 
 
-###需求解析
+### 需求解析
        
         >1.布局可见视图高度为120px;<br> 
         >2.用户下拉过程没超过120px之前，右手由底部慢慢伸出，金币由顶部慢慢下落;<br> 
@@ -15,12 +15,12 @@ PtrFrameLayout高级编程-自定义header
         >5.待文字完全出现后，金星闪烁一次;<br>
         >6.右手捏着金币缩回底部，结束。<br>
         
-###技术难点
+### 技术难点
 
         整个过程虽然步骤多，但多数是关于view的平移，转动等操作，但其实有几个要点需要注意:
                 >1.用户手势操作如何关联header中各个view的生命周期`（即何时右手出现，何时光圈转动等）`;<br>
                 >2.请求完数据后，需要主动调用ptrFrameLayout.refreshComplete(),<br>这时header会马上还原(用过ptr的应该知道)，但是按照需求，在得到数据之后还有一些视图效果需要展示，然后再还原。所以难点在于，如何在header还原之前拦截掉;
                 
-###作者
+### 作者
     * author:`robert`
     * QQ:`361981278`
