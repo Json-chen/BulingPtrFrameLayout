@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:clipChildren="false">
+
+    <ImageView
+        android:id="@+id/iv_left_hand"
+        android:layout_width="145dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="-103dp"
+        android:src="@drawable/header_left_hand"
+        tools:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/iv_right_hand"
+        android:layout_width="106dp"
+        android:layout_height="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-86dp"
+        android:layout_marginLeft="261dp"
+        android:src="@drawable/header_right_hand"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/ly_buling_coin"
+        android:layout_width="64dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="-45dp"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_coin"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/header_coin_normal" />
+
+        <ImageView
+            android:id="@+id/bg_halo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/header_halo"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/bg_buling"
+            android:layout_width="64dp"
+            android:layout_height="38dp"
+            android:src="@drawable/header_buling"
+            android:visibility="gone"
+            tools:visibility="gone" />
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_left_finger"
+        android:layout_width="19dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="-33dp"
+        android:src="@drawable/header_left_finger"
+        tools:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/iv_right_finger"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-30dp"
+        android:layout_marginLeft="274dp"
+        android:src="@drawable/header_right_finger"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ly_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="80dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_slogan"
+            android:layout_width="99dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/header_pagoda_slogan" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="99dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/header_release_refresh" />
+    </LinearLayout>
+</RelativeLayout>

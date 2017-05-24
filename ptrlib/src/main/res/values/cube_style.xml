@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="SmallProgressBarStyle">
+        <!--<item name="android:src">@drawable/loading_icon_def</item>-->
+        <!--<item name="android:minWidth">18dip</item>-->
+        <!--<item name="android:maxWidth">18dip</item>-->
+        <!--<item name="android:minHeight">18dip</item>-->
+        <!--<item name="android:maxHeight">18dip</item>-->
+    </style>
+
+</resources>
